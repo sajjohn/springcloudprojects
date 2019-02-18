@@ -1,0 +1,13 @@
+server:
+  port: 8989
+
+turbine:
+  aggregator:
+    clusterConfig: EMPLOYEEDASHBOARD,EMPLOYEESERVICE,GATEWAY
+  appConfig: employeedashboard,employeeservice,gateway
+  instanceUrlSuffix:
+    EMPLOYEEDASHBOARD: /employeedashboard/actuator/hystrix.stream
+    EMPLOYEESERVICE: /employeeservice/actuator/hystrix.stream
+    GATEWAY: /actuator/hystrix.stream
+logging:
+  file:  C:\logs\turbine.log

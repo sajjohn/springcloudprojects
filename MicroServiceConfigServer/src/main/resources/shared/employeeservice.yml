@@ -1,0 +1,20 @@
+server:
+  port: 8069
+  servlet:
+    context-path: /employeeservice
+ 
+spring:
+  data:
+    mongodb: 
+      host: localhost
+      port: 27017
+
+logging:
+  file:  C:\logs\employeeService.log
+    
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
