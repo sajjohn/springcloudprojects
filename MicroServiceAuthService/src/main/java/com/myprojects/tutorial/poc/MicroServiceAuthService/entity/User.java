@@ -1,4 +1,4 @@
-package com.myprojects.tutorial.poc.MicroServiceAuthService.entity;
+/*package com.myprojects.tutorial.poc.MicroServiceAuthService.entity;
 
 import java.util.Set;
 
@@ -181,3 +181,4 @@ public void setCredentialsExpired(boolean credentialsExpired) {
 
 	
 }
+*/

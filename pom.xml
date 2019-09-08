@@ -4,58 +4,38 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.myprojects.tutorial.poc</groupId>
-	<artifactId>turbinestream</artifactId>
+	<artifactId>DemoMicorServicesProjects</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
-	<name>turbinestream</name>
+	<name>DemoMicorServicesProjects</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.0.6.RELEASE</version>
-		<relativePath/> 
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
-		<!-- <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version> -->
 		<spring-cloud.version>Finchley.SR2</spring-cloud.version>
+		<java.version>1.8</java.version>
+		<oauth2.version>2.2.1.RELEASE</oauth2.version>
+		<jwt.version>1.0.10.RELEASE</jwt.version>
 	</properties>
-
+	
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-turbine</artifactId>
-		</dependency>
-		<!-- <dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-stream-rabbit</artifactId>
-		</dependency> -->
-
-		<!-- <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency> -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-stream-test-support</artifactId>
-			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
+	
+	
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -67,7 +47,9 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
+	
+	
+	
 	<build>
 		<plugins>
 			<plugin>
@@ -76,6 +58,18 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<modules>
+	<module>MicroServiceConfigServer</module>
+	<module>MicroServiceEureakaServer</module>
+	<module>MicroServiceAuthService</module>
+	<module>MicroserviceEmployeeDashboard</module>
+	<module>MicroserviceEmployeeGateway</module>
+	<module>MicroServiceEureakaClientEmployee</module>
+	<module>monitoring</module>
+	<module>turbinestream</module>
+	</modules>
+	
 
 
 </project>

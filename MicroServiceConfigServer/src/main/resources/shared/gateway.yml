@@ -1,5 +1,7 @@
 zuul:
   ignoredServices: '*'
+  ignoredHeaders: Access-Control-Allow-Origin 
+  sensitiveHeaders: Cookie,Set-Cookie
   host:
     connect-timeout-millis: 20000
     socket-timeout-millis: 20000
@@ -8,12 +10,12 @@ zuul:
     employee-dashboard:
       path: /dashboard/**
       serviceId: employeedashboard
-      sencitiveHeaders:
+      
     
     employee-service:
       path: /service/**
       serviceId: employeeservice
-      sencitiveHeaders:    
+          
       
       
 server:

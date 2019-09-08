@@ -12,7 +12,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 @EnableOAuth2Client
 @SpringBootApplication
 @EnableCircuitBreaker
-@EnableGlobalMethodSecurity(prePostEnabled=true)
+//@EnableGlobalMethodSecurity(prePostEnabled=true)
 public class MicroserviceEmployeeDashboardApplication {
 
 	public static void main(String[] args) {
