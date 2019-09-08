@@ -38,10 +38,10 @@ Use the Turbine metrics link (http://localhost:8989/turbine/turbine.stream) in t
 
 ## To Be Implemented in near future.
 
-Exception Handling.
-Integration Test Cases.
-Distributed Logging using SLeuth & integration with ELK.
-DOcker containerization & CI CD setup.
+- Exception Handling.
+- Integration Test Cases.
+- Distributed Logging using SLeuth & integration with ELK.
+- DOcker containerization & CI CD setup.
 
 
 
